@@ -45,7 +45,23 @@ h2 {
   width: 150px;
 }
 
-.search-bar {
+.form-inline {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100px;
+  outline: none;
+}
+
+.form-inline:hover {
+  text-decoration: none;
+  border: none;
+}
+
+.search-button .btn {
+  margin: auto;
+  margin-right: 50px;
+  width: 32px;
 }
 
 .stylists {

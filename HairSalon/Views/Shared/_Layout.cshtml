@@ -9,14 +9,12 @@
         <span class="badge badge-primary">@Html.ActionLink("Add Stylists", "Create", "Stylists")</span>
         <span class="badge badge-primary">@Html.ActionLink("Add Clients", "Create", "Clients")</span>
         <span class="badge badge-primary">@Html.ActionLink("See all stylists", "Index", "Stylists")</span>
-    </nav>
-    <div class="search-bar">
-     @using (Html.BeginForm("Search", "Stylists"))
+        @using (Html.BeginForm("Search", "Stylists"))
         {
-          @Html.TextBox("searchStylists", null, new { placeholder = "Search Stylists", @class = "form-control" })
-          <button type="submit" class="btn btn-primary btn-sm">Search</button>
+          @Html.TextBox("searchStylists", null, new { placeholder = "Stylists", @class = "form-inline", autocomplete = "off" })
+          <span class="search-button"><button type="submit" class="btn btn-dark btn-sm">&#128269; </button></span>
         }
-    </div>
+    </nav>
     <meta charset="utf-8">
     <title>Eau Claire's Salon</title>
     <link 
