@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   background-color: black;
   background-image: url(../img/hair.jpg);
   background-size: cover;
@@ -13,7 +14,7 @@ body {
 h1 {
   font-size: 60px; 
   background: linear-gradient( 
-      to right, #a77b4d, #69a2f1, 
+      to right, #a77b4d, #252628, 
        #a77b4d, #e9d3be); 
   -webkit-text-fill-color: transparent; 
   -webkit-background-clip: text; 
@@ -21,6 +22,7 @@ h1 {
 
 h2 {
   font-size: 50px;
+  text-shadow: 0.25px 0px 0px black;
 }
 
 .main-container {
