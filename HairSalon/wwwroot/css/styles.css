@@ -28,7 +28,7 @@ h2 {
 .main-container {
   position: right;
   margin: auto;
-  margin-top: 25px;
+  margin-top: 10px;
   margin-bottom: 100px;
   padding: auto;
   padding-top: 30px;
@@ -38,9 +38,21 @@ h2 {
   overflow-y: auto;
 }
 
+.form-container {
+  background-color: rgba(0, 0, 0, 0.371);
+  border-radius: 25px;
+  margin: auto;
+  padding: 50px 10px 50px 10px;
+  width: 350px;
+}
+
 .form-control {
   margin: auto;
+  margin-top: 5px;
   width: 150px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
 }
 
 .btn {
@@ -55,7 +67,7 @@ h2 {
   outline: none;
 }
 
-.form-inline:hover {
+.form-inline:hover, .form-control:hover {
   text-decoration: none;
   border: none;
 }
