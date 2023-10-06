@@ -15,7 +15,7 @@
     <br />
     @Html.TextBoxFor(model => model.PhoneNumber, new { placeholder = "Phone number", required = "required" })
     <br />
-    @Html.TextBoxFor(model => model.ScheduledAppointment, new { placeholder = "Schedule Appointment", type = "date", required = "required" })
+    @Html.TextBoxFor(model => model.ScheduledAppointment, new { placeholder = "Choose Date", type = "datetime-local", required = "required" })
     <br />
     @Html.DropDownList("StylistId")
     <br />

@@ -1,0 +1,23 @@
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.Client
+
+<h4>Make changes to @Html.DisplayFor(model => model.Name)?</h4>
+
+@using (Html.BeginForm("EditClient", "Clients", FormMethod.Post))
+{
+  @Html.HiddenFor(model => model.ClientId)
+  @Html.EditorFor(model => model.Name)
+  @Html.EditorFor(model => model.Email, new { placeholder = "Email" })
+  @Html.EditorFor(model => model.PhoneNumber, new { placeholder = "Phone number" })
+  @Html.EditorFor(model => model.ScheduledAppointment, new { placeholder = "Choose Date", type = "datetime-local", required = "required" })
+  <br />
+  @Html.LabelFor(model => model.Stylist)
+  @Html.DropDownList("StylistId")
+
+  <input type="submit" value="Save" class="btn btn-primary btn-sm"/>
+}
+<br />
+<p>@Html.ActionLink("Back to list", "Index")</p>
