@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <nav class="navbar navbar-dark">
+      <a class="navbar-brand" href="/">
+        <h1>Best Restaurants</h1>
+      </a>
+        <span class="badge badge-primary">@Html.ActionLink("Home", "Index", "Home")</span>
+        <span class="badge badge-primary">@Html.ActionLink("Add Stylists", "Create", "Stylists")</span>
+        <span class="badge badge-primary">@Html.ActionLink("Add Clients", "Create", "Clients")</span>
+        @using (Html.BeginForm("Search", "Stylists"))
+        {
+          @Html.TextBox("searchStylists", null, new { placeholder = "Search Stylists" })
+          <button type="submit" class="btn btn-primary btn-sm">Search</button>
+        }
+    </nav>
     <meta charset="utf-8">
     <title>Eau Claire's Salon</title>
     <link 
@@ -11,7 +24,9 @@
     <link rel="stylesheet" href="~/css/styles.css">
   </head>
   <body>
+    <div class="main-container">
     @RenderBody()
     @await Html.PartialAsync("Footer")
+    </div>
   </body>
 </html>
