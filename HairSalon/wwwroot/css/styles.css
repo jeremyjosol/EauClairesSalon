@@ -9,9 +9,16 @@ body {
   color: rgba(255, 255, 255, 0.956);
 }
 
+h1 {
+  font-size: 75px; 
+  background: linear-gradient( 
+      to right, #a77b4d, #69a2f1, 
+       #a77b4d, #e9d3be); 
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+}
+
 .main-container {
-  background-color: rgba(0, 0, 0, 0.421);
-  border-radius: 10px;
   margin: auto;
   margin-top: 25px;
   margin-bottom: 100px;
@@ -21,4 +28,18 @@ body {
   width: 350px;
   max-height: 525px;
   overflow-y: auto;
+}
+
+.stylists {
+  background-color: rgb(247, 238, 211);
+  border-radius: 75px;
+  margin: auto;
+  margin-top: 10px;
+  height: 50px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  opacity: 85%;
 }
