@@ -50,7 +50,7 @@ namespace HairSalon.Controllers
       ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
       return View(thisClient);
     }
-    [HttpPost, ActionName("EditClients")]
+    [HttpPost, ActionName("EditClient")]
     public ActionResult Edit(Client client)
     {
       _db.Clients.Update(client);
