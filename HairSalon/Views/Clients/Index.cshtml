@@ -5,7 +5,7 @@
 @using HairSalon.Models;
 @model List<HairSalon.Models.Client>;
 
-<h1>Clients</h1>
+<h1> @Model.FirstOrDefault().Stylist.Name's Clients</h1>
 
 @if (@Model.Count == 0)
 {
@@ -15,7 +15,7 @@
 @foreach (Client client in Model)
 {
   <div class="clients">
-    @Html.ActionLink($"{client.Name} | {@client.Stylist.Name}", "Details", new { id = client.ClientId }) 
+    @Html.ActionLink($"{client.Name} | {@client.ScheduledAppointment}", "Details", new { id = client.ClientId }) 
   </div>
 }
 
