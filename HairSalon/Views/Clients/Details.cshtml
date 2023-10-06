@@ -1,0 +1,14 @@
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.Client
+
+<h2>@Html.DisplayFor(model => model.Name)</h2>
+<h3>@Html.DisplayFor(model => model.Email)</h3>
+<h3>@Html.DisplayFor(model => model.PhoneNumber)</h3>
+<h3>@Html.DisplayFor(model => model.ScheduledAppointment)</h3>
+<br />
+<br />
+<p>@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId }, new { @class = "btn btn-dark btn-sm" })</p>
+<p>@Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId }, new { @class = "btn btn-danger btn-sm" })</p>
