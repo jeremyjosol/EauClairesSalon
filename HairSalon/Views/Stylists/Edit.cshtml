@@ -4,16 +4,17 @@
 
 @model HairSalon.Models.Stylist
 
-<h2>Edit</h2>
-
-<h4>Edit Stylist: @Html.DisplayFor(model => model.Name)</h4>
+<h2>@Html.DisplayFor(model => model.Name)</h2>
 
 @using (Html.BeginForm())
 {
   @Html.HiddenFor(model => model.StylistId)
-  @Html.LabelFor(model => model.Name)
   @Html.EditorFor(model => model.Name)
-
-  <input type="submit" value="Save" />
+  <br />
+  @Html.EditorFor(model => model.Email)
+  <br />
+  @Html.EditorFor(model => model.PhoneNumber)
+  <br />
+  <input type="submit" value="Save Changes" class="btn btn-primary btn-sm" />
 }
 <p>@Html.ActionLink("Back to list", "Index")</p>
