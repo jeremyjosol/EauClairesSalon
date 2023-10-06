@@ -6,14 +6,12 @@
 
 @if (@Model.Count == 0)
 {
-  <h3>No stylists added.</h3>
+  <br />
+  <br />
+  <h2>No stylists available.</h2>
 } 
-
-<h1>Stylists</h1>
     
 @foreach (Stylist stylist in Model)
 {
-  <div class="stylists">
-    @Html.ActionLink($"{@stylist.Name}", "Details", new { id = stylist.StylistId })
-  </div>
+  <h2>@Html.ActionLink($"* {@stylist.Name}", "Details", new { id = stylist.StylistId })</h2>
 }

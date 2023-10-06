@@ -11,10 +11,14 @@
   @Html.HiddenFor(model => model.StylistId)
   @Html.EditorFor(model => model.Name)
   <br />
+  <br />
   @Html.EditorFor(model => model.Email)
+  <br />
   <br />
   @Html.EditorFor(model => model.PhoneNumber)
   <br />
+  <br />
   <input type="submit" value="Save Changes" class="btn btn-primary btn-sm" />
 }
+<br />
 <p>@Html.ActionLink("Back to list", "Index")</p>

@@ -11,6 +11,14 @@ body {
   color: rgba(255, 255, 255, 0.956);
 }
 
+.navbar {
+  background-color: rgba(255, 255, 255, 0.833);
+}
+
+.navbar-brand {
+  margin-left: 25px;
+}
+
 h1 {
   font-size: 60px; 
   background: linear-gradient( 
@@ -23,6 +31,11 @@ h1 {
 h2 {
   font-size: 50px;
   text-shadow: 0.25px 0px 0px black;
+}
+
+h2:hover, h3:hover, h4:hover {
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 .main-container {
@@ -39,8 +52,8 @@ h2 {
 }
 
 .form-container {
-  background-color: rgba(0, 0, 0, 0.371);
-  border-radius: 25px;
+  background-color: rgba(127, 112, 125, 0.226);
+  border-radius: 60px;
   margin: auto;
   padding: 50px 10px 50px 10px;
   width: 350px;
@@ -50,8 +63,7 @@ h2 {
   margin: auto;
   margin-top: 5px;
   width: 150px;
-  border: none;
-  border-bottom: 1px solid black;
+  border-radius: 40px;
   outline: none;
 }
 
@@ -95,6 +107,16 @@ h2 {
 .badge a, .inquire a {
   color: white;
   text-shadow: 1px 1px 2px black;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
   text-decoration: none;
 }
 

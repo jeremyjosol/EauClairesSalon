@@ -5,15 +5,15 @@
 @model HairSalon.Models.Stylist
 
 <div class="form-container">
-  <h2>NEW STYLIST</h2>
 
   @using (Html.BeginForm())
   {
+    <h4>Stylist Contact:</h4>
     @Html.TextBoxFor(model => model.Name, new { placeholder = "Name", @class = "form-control" })
     @Html.TextBoxFor(model => model.Email, new { placeholder = "Email", @class = "form-control" })
     @Html.TextBoxFor(model => model.PhoneNumber, new { placeholder = "Phone number", @class = "form-control" })
     <br />
-    <input type="submit" value="Add" class="btn btn-dark btn-sm" />
+    <input type="submit" value="Add" class="btn btn-light btn-sm" />
   }
 </div>
 <br />
