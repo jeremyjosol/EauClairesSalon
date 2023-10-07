@@ -3,7 +3,7 @@
 ## About
 This web application provides Eau Claire a platform to create, edit, delete, and view details of new or existing stylists and clients at her salon. Eau Claire can book appointments for future clientle and easily find stylists with a search feature that populates results based on query of a stylist name. 
 
-![EauClairesSalon]()
+![EauClairesSalon](https://github.com/jeremyjosol/EauClairesSalon/blob/main/HairSalon/wwwroot/img/HairSalon.jpg?raw=true)
 
 ## Technologies Used
 * _Github_
