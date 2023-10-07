@@ -16,8 +16,8 @@ namespace HairSalon.Controllers
     public ActionResult Index()
     {
       List<Stylist> model = _db.Stylists
-                                        .OrderBy(stylist => stylist.Name)
-                                        .ToList();
+                               .OrderBy(stylist => stylist.Name)
+                               .ToList();
       return View(model);
     }
     public ActionResult Create()
@@ -66,9 +66,9 @@ namespace HairSalon.Controllers
     public ActionResult Search(string searchStylists)
     {
       List<Stylist> searchResults = _db.Stylists
-        .Where(stylist =>
-          stylist.Name.Contains(searchStylists))
-          .ToList();
+                                       .Where(stylist =>
+                                        stylist.Name.Contains(searchStylists))
+                                       .ToList();
     return View("Search", searchResults);
     }
   }
