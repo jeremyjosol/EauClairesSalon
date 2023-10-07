@@ -3,6 +3,7 @@
 ## About
 This web application provides Eau Claire a platform to create, edit, delete, and view details of new or existing stylists and clients at her salon. Eau Claire can book appointments for future clientle and easily find stylists with a search feature that populates results based on query of a stylist name. 
 
+Eau Claire's Salon, at its core, represents an ongoing commitment to the development of a full-stack project. It places a significant emphasis on the implementation of the MVC architectural pattern using C# to establish a modularized codebase. Simultaneously, it places a strong emphasis on frontend design, striving to practice the craft of an intuitive and aesthetically pleasing user interface.
 ![EauClairesSalon](https://github.com/jeremyjosol/EauClairesSalon/blob/main/HairSalon/wwwroot/img/HairSalon.jpg?raw=true)
 
 ## Technologies Used
@@ -15,6 +16,10 @@ This web application provides Eau Claire a platform to create, edit, delete, and
 * _JSON_
 * _Bootstrap_
 * _MySQL Workbench_
+
+## Setup Instructions
+
+1. Clone this repo.
 
 ## Database Setup
 
@@ -30,10 +35,9 @@ This web application provides Eau Claire a platform to create, edit, delete, and
 
 ## Application Setup
 
-1. Clone this repo.
-2. Open your shell (e.g., Terminal or GitBash) and navigate to this project's production directory called `HairSalon`. 
-3. Within the production directory `HairSalon`, create a new file entitled `appsettings.json`.
-4. Within `appsettings.json`, enter the following code:
+1. Open your shell (e.g., Terminal or GitBash) and navigate to this project's production directory called `HairSalon`. 
+2. Within the production directory `HairSalon`, create a new file entitled `appsettings.json`.
+3. Within `appsettings.json`, enter the following code:
 ```json
 {
   "ConnectionStrings": {
@@ -42,7 +46,7 @@ This web application provides Eau Claire a platform to create, edit, delete, and
 }
 ```
   > Be sure to replace the `{DATABASE}`, `{USERNAME}` and `{PASSWORD}` fields with your own relevant information. Do not include the curly brackets.
-5. In the production directory, you can enter the following command `dotnet watch run`.
+4. In the production directory, you can enter the following command `dotnet watch run`.
   > This command will start the project in development mode with a watcher.
 
 ## Known Bugs
