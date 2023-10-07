@@ -1,9 +1,10 @@
 # Eau Claire's Salon
 
 ## About
-This web application provides Eau Claire a platform to create, edit, delete, and view details of new or existing stylists and clients at her salon. Eau Claire can book appointments for future clientle and easily find stylists with a search feature that populates results based on query of a stylist name. 
+This web application provides our new client Claire a platform to create, edit, delete, and view details of new or existing stylists and clients at her salon. Claire can book appointments for future clientle and easily find stylists with a search feature that populates results based on query of a stylist name. 
 
 Eau Claire's Salon, at its core, represents an ongoing commitment to the development of a full-stack project. It places a significant emphasis on the implementation of the MVC architectural pattern using C# to establish a modularized codebase. Simultaneously, it places a strong emphasis on frontend design, striving to practice the craft of an intuitive and aesthetically pleasing user interface.
+
 ![EauClairesSalon](https://github.com/jeremyjosol/EauClairesSalon/blob/main/HairSalon/wwwroot/img/HairSalon.jpg?raw=true)
 
 ## Technologies Used
