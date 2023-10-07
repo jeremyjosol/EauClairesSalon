@@ -8,15 +8,15 @@
       <a class="navbar-brand" href="/">
         <h1>Eau Claire's</h1>
       </a>
-        <span class="badge badge-primary">@Html.ActionLink("HOME", "Index", "Home")</span>
-        <span class="badge badge-primary">@Html.ActionLink("NEW CLIENT", "Create", "Clients")</span>
-        <span class="badge badge-primary">@Html.ActionLink("NEW STYLIST", "Create", "Stylists")</span>
-        <span class="badge badge-primary">@Html.ActionLink("ALL STYLISTS", "Index", "Stylists")</span>
-        @using (Html.BeginForm("Search", "Stylists"))
-        {
-          @Html.TextBox("searchStylists", null, new { placeholder = "Stylists", @class = "form-inline", autocomplete = "off" })
-          <span class="search-button"><button type="submit" class="btn btn-dark btn-sm">&#128269; </button></span>
-        }
+      <span class="badge badge-primary">@Html.ActionLink("HOME", "Index", "Home")</span>
+      <span class="badge badge-primary">@Html.ActionLink("NEW CLIENT", "Create", "Clients")</span>
+      <span class="badge badge-primary">@Html.ActionLink("NEW STYLIST", "Create", "Stylists")</span>
+      <span class="badge badge-primary">@Html.ActionLink("ALL STYLISTS", "Index", "Stylists")</span>
+      @using (Html.BeginForm("Search", "Stylists"))
+      {
+        @Html.TextBox("searchStylists", null, new { placeholder = "Stylists", @class = "form-inline", autocomplete = "off" })
+        <span class="search-button"><button type="submit" class="btn btn-dark btn-sm">&#128269; </button></span>
+      }
     </nav>
     <meta charset="utf-8">
     <title>Eau Claire's Salon</title>

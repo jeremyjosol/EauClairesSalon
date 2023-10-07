@@ -8,11 +8,12 @@
 @if (@Model.Clients.Count == 0)
 {
   <div class="form-container">
-  <h2>@Html.DisplayFor(model => model.Name)</h2>
-  <p>@Html.DisplayFor(model => model.Email)</p>
-  <p>@Html.DisplayFor(model => model.PhoneNumber)</p>
+    <h2>@Html.DisplayFor(model => model.Name)</h2>
+    <p>@Html.DisplayFor(model => model.Email)</p>
+    <p>@Html.DisplayFor(model => model.PhoneNumber)</p>
   </div>
   <br />
+  
   <h3>No clients available.</h3>
 
   <div class="stylists">
@@ -24,15 +25,14 @@
 else
 {
   <div class="form-container">
-  <h2>@Html.DisplayFor(model => model.Name)'s Clientle</h2>
+    <h2>@Html.DisplayFor(model => model.Name)'s Clientle</h2>
     @foreach (Client client in Model.Clients)
     {
-    <h4>@Html.ActionLink($"* {client.Name}", "Details", "Clients", new { id = client.ClientId })</h4>
+      <h4>@Html.ActionLink($"* {client.Name}", "Details", "Clients", new { id = client.ClientId })</h4>
     }
     <p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId }, new { @class = "btn btn-dark btn-sm" })</p>
     <p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId }, new { @class = "btn btn-danger btn-sm" })</p>
   </div>    
 }
-
 <br />
 <p>@Html.ActionLink("Back to list", "Index")</p>
